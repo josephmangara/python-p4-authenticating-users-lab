@@ -7,7 +7,7 @@ metadata = MetaData(naming_convention={
 })
 
 db = SQLAlchemy(metadata=metadata)
-
+ 
 class Article(db.Model, SerializerMixin):
     __tablename__ = 'articles'
 
